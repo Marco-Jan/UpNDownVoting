@@ -11,7 +11,7 @@
           </thead>
         <?php foreach ($products as $product): ?>
             <tr>
-                <td><img src="../uploads/product_images/<?= e($product->file_name) ?>" alt="<?= e($product->title) ?>"
+                <td><img src="../uploads/img/<?= e($product->file_name) ?>" alt="<?= e($product->title) ?>"
                          width="150rem">
                 </td>
                 <td><?= e($product->title) ?></td>

@@ -4,7 +4,7 @@ require_once __DIR__ . "/../inc/all.php";
 // Wenn jemand schon eingeloggt ist, wird er auf die Admin-Seite weitergeleitet.
 if (isset($login)) {
   if ($login->logged_in) {
-    header("Location: /php_start_projects/up_down_voting/admin/admin.php");
+    header("Location: /admin/admin.php");
     exit();
   }
 }
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $login->login();
 
     // Wenn die Daten korrekt sind, wird der Benutzer auf die Admin-Seite weitergeleitet.
-    header("Location: /php_start_projects/up_down_voting/admin/admin.php");
+    header("Location: /admin/admin.php");
     exit();
   } else {
     echo "<p style='color: red'>Benutzername oder Passwort falsch</p>";

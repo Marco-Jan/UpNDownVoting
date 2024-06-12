@@ -39,7 +39,7 @@ class LoginSession
   public function require_login(): void
   {
     if (!$this->logged_in) {
-      header("Location: /php_start_projects/up_down_voting/login/views/login.view.php");
+      header("Location: /login/views/login.view.php");
       exit();
     }
   }
